@@ -1,0 +1,775 @@
+/* Base Styles */
+:root {
+  --primary-color: #ff6600;
+  --white: #ffffff;
+  --dark-gray: #333333;
+  --light-gray: #f5f5f5;
+  --font-main: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.main-container {
+  background-image: url("https://wallpaperbat.com/img/13093-black-technology-wallpaper-top-free-black-technology.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.language-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  backdrop-filter: blur(5px);
+}
+
+.language-select {
+  background: transparent;
+  border: none;
+  color: var(--white);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.language-select option {
+  color: var(--dark-gray);
+}
+
+.fa-globe {
+  font-size: 0.9rem;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* CTA Button Styles */
+.cta-container {
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.cta-button:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-icon {
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Guarantee Text */
+.guarantee-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .navbar {
+    margin-bottom: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 24px;
+  }
+}
+
+/* --------------------------------------- Section 2 ----------------------------------------------------- */
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  background-color: #f8f9fa;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-1-image {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-1-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.section-1-image:hover img {
+  transform: scale(1.02);
+}
+
+.section-1-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.section-1-content h1 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-1-content p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .section-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+  }
+
+  .section-1-image {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .section-1-content {
+    width: 48%;
+    text-align: left;
+  }
+
+  .section-1-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1024px) {
+  .section-1-content h1 {
+    font-size: 3rem;
+  }
+
+  .section-1-content p {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Animation for subtle entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-1-image,
+.section-1-content {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.section-1-content {
+  animation-delay: 0.2s;
+}
+
+/* -----------------------------------Section 2 ----------------------------------------------- */
+
+.Banner {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-content-right {
+  max-width: 600px;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.Banner p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.image-container-lamp {
+  position: relative;
+  z-index: 1;
+  max-width: 50%;
+}
+
+.image-container-lamp img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: perspective(1000px) rotateY(-15deg);
+  transition: transform 0.5s ease;
+}
+
+.image-container-lamp img:hover {
+  transform: perspective(1000px) rotateY(-5deg);
+}
+
+/* CTA Button styles */
+.cta-button {
+  display: inline-block;
+  background: #4f46e5;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
+}
+
+.cta-button:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .Banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
+
+  .banner-content-right {
+    max-width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .image-container-lamp {
+    max-width: 80%;
+    margin-top: 2rem;
+  }
+
+  .image-container-lamp img {
+    transform: none;
+  }
+
+  .image-container-lamp img:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .image-container-lamp {
+    max-width: 100%;
+  }
+}
+
+/* Decorative elements */
+.Banner::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(79, 70, 229, 0.1) 0%,
+    rgba(79, 70, 229, 0) 70%
+  );
+  z-index: 0;
+}
+
+/* --------------------------------- section 3 -------------------------------- */
+
+.Banner2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.banner-content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.phoneText {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.icon span {
+  font-size: 2rem;
+  color: #636363;
+  transition: color 0.2s ease;
+}
+
+.icon span:hover {
+  color: #00a2ff;
+}
+
+.allApp {
+  margin-bottom: 1.5rem;
+}
+
+.allApp a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #00a2ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.allApp a:hover {
+  color: #0077cc;
+}
+
+.arrow {
+  display: inline-flex;
+}
+
+.button {
+  background-color: #00a2ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 162, 255, 0.3);
+}
+
+.button:hover {
+  background-color: #0088dd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 162, 255, 0.4);
+}
+
+/* Tablet and Larger Screens */
+@media (min-width: 768px) {
+  .Banner2 {
+    flex-direction: row;
+    padding: 3rem 2rem;
+    gap: 3rem;
+  }
+
+  .banner-content-right {
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+  }
+
+  .heading {
+    font-size: 2.25rem;
+  }
+
+  .phoneText {
+    font-size: 1.1rem;
+  }
+
+  .icon {
+    justify-content: flex-start;
+  }
+}
+
+/* Large Desktop Screens */
+@media (min-width: 1024px) {
+  .Banner2 {
+    padding: 4rem;
+    gap: 4rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .button {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Fix for the typo in "every" (everry) - you should fix this in your HTML */
+.heading::after {
+  content: "y";
+  color: transparent;
+}
+
+/* ----------------------------------------------- section 4 ------------------------------- */
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.feature-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 10%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fa;
+  padding: 15px;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+.feature-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #718096;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .feature-item {
+    max-width: 100%;
+  }
+}
+
+/* ---------------------------------------section 5 --------------------------- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.advantage {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.advantage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.advantage a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.advantage a:hover {
+  color: #3498db;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.advantage a:hover .arrow {
+  transform: translateX(5px);
+}
+
+.server {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.server:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.server img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .advantage {
+    flex: 0 0 30%;
+  }
+
+  .server {
+    flex: 1;
+  }
+}
